@@ -1,0 +1,268 @@
+.sunodol-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #f0fdf4 100%);
+}
+
+/* Header */
+.sunodol-header {
+    text-align: center;
+    padding: 48px 16px;
+}
+
+.sunodol-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.sunodol-subtitle {
+    font-size: 1.5rem;
+    color: #6b7280;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+/* Plans Section */
+.sunodol-plans {
+    padding: 0 16px 64px;
+}
+
+.sunodol-plans-grid {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.sunodol-card {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sunodol-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+
+.sunodol-card-featured {
+    background: linear-gradient(135deg, rgba(255,193,7,0.15) 0%, rgba(255,235,59,0.1) 100%);
+    border: 2px solid #ffc107;
+}
+
+.sunodol-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fbbf24;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sunodol-card-header {
+    margin-bottom: 24px;
+}
+
+.sunodol-plan-title {
+    background: #1e3a8a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.sunodol-plan-subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.sunodol-product-image {
+    height: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.sunodol-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sunodol-card:hover .sunodol-image {
+    transform: scale(1.05);
+}
+
+.sunodol-pricing {
+    margin-bottom: 24px;
+}
+
+.sunodol-original-price {
+    color: #6b7280;
+    text-decoration: line-through;
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+}
+
+.sunodol-price-highlight {
+    background: #fbbf24;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.sunodol-final-price {
+    margin-bottom: 8px;
+}
+
+.sunodol-installment-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.sunodol-price-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sunodol-cash-price {
+    color: #6b7280;
+}
+
+.sunodol-buy-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #22c55e, #16a34a);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.sunodol-buy-btn:hover {
+    background: linear-gradient(45deg, #16a34a, #15803d);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+
+.sunodol-free-shipping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #059669;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Benefits Section */
+.sunodol-benefits {
+    background: white;
+    padding: 64px 16px;
+}
+
+.sunodol-benefits-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #1f2937;
+}
+
+.sunodol-benefits-grid {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.sunodol-benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sunodol-check {
+    color: #22c55e;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Footer */
+.sunodol-footer {
+    background: #1f2937;
+    color: white;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.sunodol-disclaimer {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sunodol-title {
+        font-size: 2.5rem;
+    }
+
+    .sunodol-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .sunodol-plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sunodol-price-value {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sunodol-card {
+        padding: 24px;
+    }
+
+    .sunodol-title {
+        font-size: 2rem;
+    }
+
+    .sunodol-subtitle {
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,377 @@
+/* Cores Variáveis Sonodol */
+:root {
+    --sonodol-primary-blue: #4A6EBF;
+    --sonodol-secondary-blue: #5470C6;
+    --sonodol-white: #FFFFFF;
+    --sonodol-turquoise: #40E0D0;
+    --sonodol-dark-turquoise: #20B2AA;
+    --sonodol-dark-blue: #2E4A7A;
+    --sonodol-success: #059669;
+    --sonodol-gray-light: #F9FAFB;
+    --sonodol-gray-medium: #6B7280;
+}
+
+/* How To Use Section Styles */
+.sonodol-usage-section {
+    background: linear-gradient(135deg, var(--sonodol-dark-blue) 0%, #1e3a8a 50%, #312e81 100%);
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+/* Stars Background Animation */
+.sonodol-stars-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, var(--sonodol-turquoise), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 90px 40px, var(--sonodol-turquoise), transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, var(--sonodol-turquoise), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: sonodol-twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes sonodol-twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
+
+/* Container */
+.sonodol-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Content Grid */
+.sonodol-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* Text Content */
+.sonodol-text-content {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: sonodol-fadeInUp 1s ease-out 0.2s forwards;
+}
+
+.sonodol-main-title {
+    font-size: 2.19rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--sonodol-white);
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.sonodol-highlight-blue {
+    color: var(--sonodol-primary-blue);
+    text-shadow: 0 0 10px rgba(74, 110, 191, 0.5);
+}
+
+.sonodol-highlight-green {
+    color: var(--sonodol-turquoise);
+    text-shadow: 0 0 10px rgba(64, 224, 208, 0.5);
+}
+
+/* Subtitle */
+.sonodol-subtitle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    animation: sonodol-pulse 2s ease-in-out infinite;
+}
+
+.sonodol-clock-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--sonodol-turquoise);
+    margin-right: 12px;
+}
+
+.sonodol-subtitle {
+    color: var(--sonodol-turquoise);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* Explanation Text */
+.sonodol-explanation-text {
+    margin-bottom: 32px;
+}
+
+.sonodol-explanation-text p {
+    color: var(--sonodol-white);
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.sonodol-explanation-text .sonodol-highlight-blue {
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--sonodol-primary-blue), var(--sonodol-secondary-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sonodol-explanation-text .sonodol-highlight-green {
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--sonodol-turquoise), var(--sonodol-dark-turquoise));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Standout Phrase */
+.sonodol-standout-phrase {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 48px;
+}
+
+.sonodol-standout-phrase::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--sonodol-turquoise), var(--sonodol-dark-turquoise));
+    border-radius: 2px;
+}
+
+.sonodol-standout-phrase p {
+    color: var(--sonodol-turquoise);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Credibility Grid */
+.sonodol-credibility-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 24px;
+    border: 1px solid rgba(64, 224, 208, 0.2);
+}
+
+.sonodol-credibility-item {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.sonodol-credibility-item:hover {
+    transform: translateX(5px);
+}
+
+.sonodol-check-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--sonodol-success);
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.sonodol-credibility-item span {
+    color: var(--sonodol-white);
+    font-size: 0.875rem;
+}
+
+/* Medical Illustration */
+.sonodol-illustration-container {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: sonodol-fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.sonodol-medical-illustration {
+    background: linear-gradient(135deg, var(--sonodol-gray-light) 0%, var(--sonodol-white) 100%);
+    border: 2px solid rgba(74, 110, 191, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sonodol-medical-illustration:hover {
+    transform: translateY(-5px);
+}
+
+.sonodol-medical-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+/* Steps Section */
+.sonodol-steps-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 48px 32px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: sonodol-fadeInUp 1s ease-out 0.8s forwards;
+}
+
+.sonodol-steps-title {
+    text-align: center;
+    color: var(--sonodol-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.sonodol-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.sonodol-step-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid rgba(64, 224, 208, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.sonodol-step-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(64, 224, 208, 0.4);
+    box-shadow: 0 10px 20px rgba(64, 224, 208, 0.2);
+}
+
+.sonodol-step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--sonodol-turquoise), var(--sonodol-dark-turquoise));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 16px;
+    font-size: 1.2rem;
+    animation: sonodol-pulseNumber 2s ease-in-out infinite;
+}
+
+@keyframes sonodol-pulseNumber {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(64, 224, 208, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(64, 224, 208, 0);
+    }
+}
+
+.sonodol-step-content h4 {
+    color: var(--sonodol-white);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.sonodol-step-content p {
+    color: var(--sonodol-white);
+    font-size: 0.875rem;
+}
+
+/* Animations */
+@keyframes sonodol-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sonodol-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .sonodol-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .sonodol-main-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sonodol-usage-section {
+        padding: 60px 16px;
+    }
+
+    .sonodol-main-title {
+        font-size: 1.8rem;
+    }
+
+    .sonodol-credibility-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sonodol-steps-section {
+        padding: 32px 24px;
+    }
+
+    .sonodol-steps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .sonodol-main-title {
+        font-size: 1.2rem;
+    }
+
+    .sonodol-medical-illustration {
+        padding: 24px;
+    }
+
+    .sonodol-step-card {
+        padding: 16px;
+    }
+
+    .sonodol-subtitle{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonodol – Durma até 5x mais rápido</title>
+    <meta name="description"
+        content="Fórmula científica revolucionária que elimina insônia e reduz risco cardíaco em 30 dias. 97% de eficácia comprovada. Garantia de 90 dias.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sonodol.com.br/">
+    <meta property="og:title" content="Sonodol - Acabe com a Insônia e Proteja seu Coração">
+    <meta property="og:description"
+        content="Fórmula científica que elimina insônia e reduz risco cardíaco. 97% de eficácia comprovada.">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="stylesheet" href="css/comparison.css">
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="https://sonodol.com.br/wp-content/uploads/2024/07/FavIconlua-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://sonodol.com.br/wp-content/uploads/2024/07/FavIconlua-300x300.png" sizes="192x192">
+</head>
+
+<body>
+    <!-- Barra de Urgência -->
+    <div id="urgency-bar" class="urgency-bar">
+        <div class="container">
+            <div class="urgency-content">
+                <div class="urgency-alert">
+                    <span class="alert-icon">⚠️</span>
+                    <span class="alert-text">ALERTA: 72% dos brasileiros
+                        sofrem de distúrbios do sono que podem ser
+                        FATAIS</span>
+                </div>
+                <div class="urgency-stats">
+                    <div class="viewers">
+                        <div class="live-dot"></div>
+                        <span id="viewer-count">2847</span> pessoas
+                        visualizando
+                    </div>
+                    <div class="countdown">
+                        Oferta expira em: <span id="main-countdown">04:27:33</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    VOCÊ PODE ESTAR À <span class="highlight-danger">1 NOITE
+                        MAL DORMIDA</span> DE UM INFARTO
+                </h1>
+
+                <div class="study-box">
+                    <p class="study-header"><strong>Estudo exclusivo da USP
+                            revela:</strong> Insônia crônica está
+                        diretamente ligada à morte súbita</p>
+                    <ul class="study-list">
+                        <li><strong>40%</strong> dos infartos ocorrem em
+                            pessoas com insônia crônica</li>
+                        <li>Risco de <strong>AVC aumenta 300%</strong> após
+                            6 meses de sono irregular</li>
+                        <li><strong>89%</strong> dos casos de demência
+                            precoce estão ligados à falta de sono</li>
+                    </ul>
+                </div>
+
+                <div class="video-container">
+                    <video id="hero-video" class="hero-video" poster="/placeholder.svg" controls muted autoplay>
+                        <source src="#" type="video/mp4">
+                        Seu navegador não suporta vídeo HTML5.
+                    </video>
+                    <div id="video-cta-overlay" class="video-cta-overlay hidden">
+                        <div class="cta-content">
+                            <h3>Descubra a Solução Agora!</h3>
+                            <button class="cta-button" onclick="scrollToPricing()">
+                                DESCOBRIR SOLUÇÃO AGORA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="main-cta-button" onclick="scrollToPricing()">
+                        DESCOBRIR SOLUÇÃO AGORA
+
+                    </button>
+                    <div class="cta-subtitle">Antes que seja tarde
+                        demais</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">O Que Seu Médico <span class="highlight-danger">NÃO TE CONTOU</span></h2>
+            <p class="section-subtitle">Sobre os Perigos MORTAIS da
+                Insônia</p>
+
+            <div class="quiz-container">
+                <div class="quiz-box">
+                    <h3 class="quiz-title">Checklist de Sintomas de Risco
+                        Cardíaco</h3>
+
+                    <div class="symptoms-grid" id="symptoms-grid">
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="sleep-time">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Demoro mais de 30
+                                minutos para adormecer</span>
+                        </label>
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="wake-up">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Acordo várias vezes
+                                durante a madrugada</span>
+                        </label>
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="fatigue">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Sinto cansaço mesmo
+                                depois de dormir 8 horas</span>
+                        </label>
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="palpitations">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Tenho palpitações ou
+                                dor no peito frequentemente</span>
+                        </label>
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="pressure">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Minha pressão
+                                arterial está alterada</span>
+                        </label>
+                        <label class="symptom-item">
+                            <input type="checkbox" name="symptom" value="anxiety">
+                            <span class="checkmark"></span>
+                            <span class="symptom-text">Sinto ansiedade ou
+                                irritabilidade durante o dia</span>
+                        </label>
+                    </div>
+
+                    <div class="quiz-result">
+                        <div class="symptom-counter">
+                            <span id="checked-count">0</span>
+                            <span class="counter-text"> de 6 sintomas
+                                identificados</span>
+                        </div>
+
+                        <div id="risk-assessment" class="risk-box risk-low">
+                            <div class="risk-level">RISCO BAIXO</div>
+                            <div class="risk-message">Continue monitorando
+                                sua saúde</div>
+                        </div>
+
+                        <div id="urgent-cta" class="urgent-cta hidden">
+                            <button class="urgent-button" onclick="scrollToPricing()">
+                                VER SOLUÇÃO URGENTE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Time Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="stats-title">ACONTECENDO AGORA NO BRASIL</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="heart-attacks">47</div>
+                    <div class="stat-label">brasileiros tendo micro-infartos
+                        por falta de sono</div>
+                    <div class="stat-period">nas últimas 24h</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="dementia">312</div>
+                    <div class="stat-label">pessoas desenvolvendo demência
+                        precoce</div>
+                    <div class="stat-period">nesta semana</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="strokes">128</div>
+                    <div class="stat-label">casos de AVC em pessoas com
+                        insônia</div>
+                    <div class="stat-period">hoje</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="deaths">23</div>
+                    <div class="stat-label">mortes súbitas relacionadas ao
+                        sono irregular</div>
+                    <div class="stat-period">nas últimas 12h</div>
+                </div>
+            </div>
+
+            <div class="stats-warning">
+                <p class="warning-title">⚠️ ESTES NÚMEROS AUMENTAM A CADA
+                    SEGUNDO</p>
+                <p class="warning-text">
+                    Enquanto você lê esta página, centenas de brasileiros
+                    estão desenvolvendo problemas cardíacos graves
+                    devido à falta de sono adequado. <strong>NÃO SEJA MAIS
+                        UMA ESTATÍSTICA.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section class="stories-section">
+        <div class="container">
+            <h2 class="section-title-h2">Histórias Que Poderiam Ter Sido
+                Evitadas</h2>
+            <p class="section-subtitle-danger">Casos reais de pessoas que
+                quase perderam a vida por ignorar os sinais</p>
+
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <img src="/images/thispersondoesnotexist.webp" alt="João Silva" class="story-avatar">
+                        <div class="story-info">
+                            <h3 class="story-name">João Silva</h3>
+                            <p class="story-details">42 anos • São Paulo</p>
+                        </div>
+                    </div>
+
+                    <p class="story-preview">
+                        Executivo sofreu infarto súbito aos 42 anos após
+                        meses de insônia crônica...
+                    </p>
+
+                    <blockquote class="story-quote">
+                        "Quase morri por ignorar meu sono. Sonodol me deu uma segunda chance de viver."
+                    </blockquote>
+
+                    <button class="read-more-btn" onclick="openStoryModal(0)">
+                        Ler História Completa
+                    </button>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <img src="/images/women-40.jpg" alt="Maria Santos" class="story-avatar">
+                        <div class="story-info">
+                            <h3 class="story-name">Maria Santos</h3>
+                            <p class="story-details">38 anos • Rio de
+                                Janeiro</p>
+                        </div>
+                    </div>
+
+                    <p class="story-preview">
+                        Mãe de 2 filhos teve AVC aos 38 após 1 ano sem
+                        dormir adequadamente...
+                    </p>
+
+                    <blockquote class="story-quote">
+                        "Meus filhos quase ficaram órfãos. Sonodol me devolveu para minha família."
+                    </blockquote>
+
+                    <button class="read-more-btn" onclick="openStoryModal(1)">
+                        Ler História Completa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Reveal -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-header">
+                <h2 class="solution-title">
+                    Mas existe uma <span class="highlight-success">ESPERANÇA...</span>
+                </h2>
+                <p class="solution-subtitle">
+                    Após 10 anos de pesquisa, cientistas brasileiros
+                    desenvolveram a fórmula mais avançada
+                    para sono restaurador e proteção cardíaca já criada.
+                </p>
+            </div>
+
+            <div class="solution-content">
+                <div class="product-showcase">
+                    <div class="product-container">
+                        <img src="/images/03-PRODUTO.png" alt="Sonodol" class="product-image" style="width: 17rem;">
+                        <div class="product-badge">NOVO!<br>2025</div>
+                    </div>
+
+                    <h3 class="product-name">Sonodol</h3>
+                    <p class="product-description">
+                        A revolução científica que salva vidas através do sono restaurador
+                    </p>
+
+                    <div class="product-stats">
+                        <div class="product-stat">
+                            <div class="stat-value">97%</div>
+                            <div class="stat-label">Eficácia comprovada</div>
+                        </div>
+                        <div class="product-stat">
+                            <div class="stat-value">15min</div>
+                            <div class="stat-label">Para adormecer</div>
+                        </div>
+                        <div class="product-stat">
+                            <div class="stat-value">8h</div>
+                            <div class="stat-label">Sono ininterrupto</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formula-section">
+                    <h3 class="formula-title">Fórmula Científica
+                        Exclusiva</h3>
+                    <p class="formula-description">
+                        Cada cápsula contém a dosagem exata de 5 compostos
+                        cientificamente validados
+                        para restaurar seu sono e proteger seu coração.
+                    </p>
+
+                    <div class="ingredients-list" id="ingredients-list">
+                        <div class="ingredient-item">
+                            <button class="ingredient-header" onclick="toggleIngredient(0)">
+                                <div class="ingredient-info">
+                                    <h4 class="ingredient-name">Magnésio
+                                        Glicinato <span class="ingredient-dose">(400mg)</span></h4>
+                                    <p class="ingredient-benefit">Relaxamento
+                                        muscular profundo, redução do
+                                        cortisol e preparação natural para o
+                                        sono</p>
+                                </div>
+                                <span class="ingredient-toggle">+</span>
+                            </button>
+                            <div class="ingredient-details hidden">
+                                <p><strong>Comprovação Científica:</strong>
+                                    Estudos mostram que o magnésio glicinato
+                                    é 4x mais absorvido que outras formas,
+                                    ativando o sistema nervoso
+                                    parassimpático</p>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item">
+                            <button class="ingredient-header" onclick="toggleIngredient(1)">
+                                <div class="ingredient-info">
+                                    <h4 class="ingredient-name">L-Teanina
+                                        Premium <span class="ingredient-dose">(200mg)</span></h4>
+                                    <p class="ingredient-benefit">Ondas
+                                        cerebrais alfa, tranquilidade mental
+                                        sem sonolência diurna</p>
+                                </div>
+                                <span class="ingredient-toggle">+</span>
+                            </button>
+                            <div class="ingredient-details hidden">
+                                <p><strong>Comprovação Científica:</strong>
+                                    Aminoácido do chá verde que aumenta GABA
+                                    e serotonina, clinicamente testado para
+                                    reduzir ansiedade em 30 minutos</p>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item">
+                            <button class="ingredient-header" onclick="toggleIngredient(2)">
+                                <div class="ingredient-info">
+                                    <h4 class="ingredient-name">Melatonina
+                                        Microdosada <span class="ingredient-dose">(0.5mg)</span></h4>
+                                    <p class="ingredient-benefit">Regulação
+                                        natural do ciclo circadiano sem
+                                        dependência</p>
+                                </div>
+                                <span class="ingredient-toggle">+</span>
+                            </button>
+                            <div class="ingredient-details hidden">
+                                <p><strong>Comprovação Científica:</strong>
+                                    Dose otimizada baseada em pesquisas do
+                                    MIT - 10x menor que doses comerciais,
+                                    mais eficaz e sem efeitos colaterais</p>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item">
+                            <button class="ingredient-header" onclick="toggleIngredient(3)">
+                                <div class="ingredient-info">
+                                    <h4 class="ingredient-name">5-HTP <span class="ingredient-dose">(100mg)</span></h4>
+                                    <p class="ingredient-benefit">Aumento
+                                        natural de serotonina, melhora do
+                                        humor e qualidade do sono REM</p>
+                                </div>
+                                <span class="ingredient-toggle">+</span>
+                            </button>
+                            <div class="ingredient-details hidden">
+                                <p><strong>Comprovação Científica:</strong>
+                                    Precursor direto da serotonina, aumenta
+                                    sono profundo em 25% segundo estudos da
+                                    Universidade de Stanford</p>
+                            </div>
+                        </div>
+
+                        <div class="ingredient-item">
+                            <button class="ingredient-header" onclick="toggleIngredient(4)">
+                                <div class="ingredient-info">
+                                    <h4 class="ingredient-name">GABA <span class="ingredient-dose">(750mg)</span></h4>
+                                    <p class="ingredient-benefit">Desligamento
+                                        da mente hiperativa, relaxamento
+                                        cerebral profundo</p>
+                                </div>
+                                <span class="ingredient-toggle">+</span>
+                            </button>
+                            <div class="ingredient-details hidden">
+                                <p><strong>Comprovação Científica:</strong>
+                                    Principal neurotransmissor inibitório do
+                                    cérebro, reduz atividade neural
+                                    excessiva que causa insônia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-cta">
+                        <button class="solution-button" onclick="scrollToPricing()">
+                            GARANTIR MINHA PROTEÇÃO
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Credibility -->
+    <section class="credibility-section">
+        <div class="container">
+            <div class="credibility-header">
+                <h2 class="section-title-2">Comprovação <span class="highlight-primary">Científica
+                        Mundial</span></h2>
+                <p class="section-subtitle">Grandes universidades confirmam:
+                    Sonodol é a solução mais eficaz já testada</p>
+            </div>
+
+            <div class="studies-grid">
+                <div class="study-card">
+                    <div class="study-institution">Universidade
+                        Harvard</div>
+                    <div class="study-year">2024 • 2.847 participantes</div>
+                    <div class="study-result">94% dos participantes
+                        reduziram insônia em 30 dias</div>
+                    <a href="#" class="study-link">Verificar Estudo →</a>
+                </div>
+                <div class="study-card">
+                    <div class="study-institution">Universidade de São Paulo
+                        (USP)</div>
+                    <div class="study-year">2023 • 1.543 voluntários</div>
+                    <div class="study-result">89% eliminaram despertares
+                        noturnos</div>
+                    <a href="#" class="study-link">Verificar Estudo →</a>
+                </div>
+                <div class="study-card">
+                    <div class="study-institution">Johns Hopkins</div>
+                    <div class="study-year">2024 • 3.267 participantes</div>
+                    <div class="study-result">78% reduziram risco cardíaco
+                        em 3 meses</div>
+                    <a href="#" class="study-link">Verificar Estudo →</a>
+                </div>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="testimonials-section">
+                <h3 class="testimonials-title">Depoimentos Reais de Quem
+                    Recuperou a Vida</h3>
+
+                <div class="testimonials-container">
+                    <div class="testimonial-card active" id="testimonial-0">
+                        <div class="testimonial-header">
+                            <img src="/images/pexels-luizclas-170497-1848565.jpg" alt="Ana Carolina M."
+                                class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Ana Carolina
+                                    M.</h4>
+                                <p class="testimonial-location">34 anos •
+                                    Belo Horizonte</p>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <blockquote class="testimonial-text">
+                            "Sofria de insônia há 8 anos. Em 15 dias usando Sonodol, volto a dormir como criança.
+                            Minha pressão normalizou e me sinto 10 anos mais nova!"
+                        </blockquote>
+
+                        <div class="testimonial-comparison">
+                            <div class="comparison-before">
+                                <div class="comparison-label">ANTES</div>
+                                <div class="comparison-value">3-4h de sono
+                                    fragmentado</div>
+                            </div>
+                            <div class="comparison-after">
+                                <div class="comparison-label">DEPOIS</div>
+                                <div class="comparison-value">8h de sono
+                                    profundo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-navigation">
+                    <button class="nav-dot active" onclick="showTestimonial(0)"></button>
+                    <button class="nav-dot" onclick="showTestimonial(1)"></button>
+                    <button class="nav-dot" onclick="showTestimonial(2)"></button>
+                </div>
+            </div>
+
+            <!-- Impact Numbers -->
+            <div class="impact-numbers">
+                <h3 class="impact-title">Resultados que Transformam
+                    Vidas</h3>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-number">15.847+</div>
+                        <div class="impact-label">vidas salvas</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">8.234</div>
+                        <div class="impact-label">evitaram cirurgias
+                            cardíacas</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">21.456</div>
+                        <div class="impact-label">recuperaram energia</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">97%</div>
+                        <div class="impact-label">recomendam</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sonodol-usage-section" id="sonodolUsage">
+        <!-- Stars Background -->
+        <div class="sonodol-stars-bg"></div>
+
+        <div class="sonodol-container">
+            <div class="sonodol-content-grid">
+
+                <!-- Left Column - Content -->
+                <div class="sonodol-text-content">
+                    <h2 class="sonodol-main-title">
+                        Através de uma nova abordagem<br />
+                        <span class="sonodol-highlight-blue">SONODOL</span>
+                        trará <span class="sonodol-highlight-green">descanso
+                            para você!</span>
+                    </h2>
+
+                    <div class="sonodol-subtitle-container">
+                        <svg class="sonodol-clock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <p class="sonodol-subtitle">
+                            Sinta os efeitos positivos já nas primeiras
+                            noites.
+                        </p>
+                    </div>
+
+                    <div class="sonodol-explanation-text">
+                        <p>
+                            A aplicação <span class="sonodol-highlight-blue">sublingual</span>
+                            proporciona uma absorção
+                            <span class="sonodol-highlight-green">rápida e
+                                eficaz</span> por meio da glândula que temos
+                            sob a língua,
+                            nela os vasos que acessam diretamente e alcançam
+                            efeitos surpreendentes em poucos minutos.
+                        </p>
+                    </div>
+
+                    <div class="sonodol-standout-phrase">
+                        <p>"Essa é a forma mais eficaz."</p>
+                    </div>
+
+                    <!-- Credibility Elements -->
+                    <div class="sonodol-credibility-grid">
+                        <div class="sonodol-credibility-item">
+                            <svg class="sonodol-check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Método aprovado por farmacêuticos</span>
+                        </div>
+                        <div class="sonodol-credibility-item">
+                            <svg class="sonodol-check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Absorção 5x mais rápida que
+                                cápsulas</span>
+                        </div>
+                        <div class="sonodol-credibility-item">
+                            <svg class="sonodol-check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Efeito em 10-15 minutos</span>
+                        </div>
+                        <div class="sonodol-credibility-item">
+                            <svg class="sonodol-check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Sem passar pelo sistema digestivo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Medical Illustration -->
+                <div class="sonodol-illustration-container">
+                    <div class="sonodol-medical-illustration">
+                        <img src="images/imgDiferencial.webp"
+                            alt="Ilustração médica mostrando a absorção sublingual do SONODOL"
+                            class="sonodol-medical-image" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- How To Use Steps -->
+            <div class="sonodol-steps-section">
+                <h3 class="sonodol-steps-title">COMO USAR CORRETAMENTE:</h3>
+
+                <div class="sonodol-steps-grid">
+                    <div class="sonodol-step-card">
+                        <div class="sonodol-step-number">1</div>
+                        <div class="sonodol-step-content">
+                            <h4>PASSO 1</h4>
+                            <p>Coloque 2 gotas do SONODOL sob a língua</p>
+                        </div>
+                    </div>
+
+                    <div class="sonodol-step-card">
+                        <div class="sonodol-step-number">2</div>
+                        <div class="sonodol-step-content">
+                            <h4>PASSO 2</h4>
+                            <p>Aguarde 60 segundos para absorção
+                                completa</p>
+                        </div>
+                    </div>
+
+                    <div class="sonodol-step-card">
+                        <div class="sonodol-step-number">3</div>
+                        <div class="sonodol-step-content">
+                            <h4>PASSO 3</h4>
+                            <p>Relaxe - efeitos em 10-15 minutos</p>
+                        </div>
+                    </div>
+
+                    <div class="sonodol-step-card">
+                        <div class="sonodol-step-number">4</div>
+                        <div class="sonodol-step-content">
+                            <h4>PASSO 4</h4>
+                            <p>Durma tranquilamente por 8 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sonodol-comparison-main-section" id="sonodolComparisonSection">
+        <div class="sonodol-comparison-container">
+
+            <!-- Header Section -->
+            <div class="sonodol-comparison-header">
+                <h2 class="sonodol-comparison-main-title">
+                    <span class="sonodol-comparison-highlight-green">SONODOL</span>
+                    vs Medicamentos Controlados<br>
+                    Veja a <span class="sonodol-comparison-highlight-blue">DIFERENÇA</span>
+                    que pode <span class="sonodol-comparison-highlight-blue">SALVAR</span>
+                    sua vida
+                </h2>
+                <p class="sonodol-comparison-subtitle">
+                    Compare você mesmo: Por que milhares estão abandonando
+                    remédios controlados e escolhendo a solução natural
+                </p>
+            </div>
+
+            <!-- Warning Box -->
+            <div class="sonodol-comparison-warning-box">
+                <div class="sonodol-comparison-warning-icon">⚠️</div>
+                <div class="sonodol-comparison-warning-content">
+                    <h3>ATENÇÃO: FATOS QUE OS MÉDICOS NÃO CONTAM</h3>
+                    <ul class="sonodol-comparison-warning-list">
+                        <li>89% dos usuários de benzodiazepínicos
+                            desenvolvem dependência</li>
+                        <li>Risco de Alzheimer aumenta 51% com uso
+                            prolongado</li>
+                        <li>1 em cada 3 infartos em usuários crônicos ocorre
+                            durante o sono</li>
+                        <li>Síndrome de abstinência pode durar até 18
+                            meses</li>
+                        <li>Combinação com álcool pode ser FATAL</li>
+                    </ul>
+                    <div class="sonodol-comparison-warning-solution">
+                        ✅ SONODOL: A ÚNICA alternativa 100% natural que
+                        oferece sono profundo SEM os riscos
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="sonodol-comparison-table-container">
+                <table class="sonodol-comparison-table">
+                    <thead>
+                        <tr class="sonodol-comparison-table-header">
+                            <th class="sonodol-comparison-criteria-column">CRITÉRIO</th>
+                            <th class="sonodol-comparison-sonodol-column">
+                                <div class="sonodol-comparison-column-header">
+                                    <span class="sonodol-comparison-product-name">SONODOL</span>
+                                    <span class="sonodol-comparison-product-subtitle">100%
+                                        Natural</span>
+                                </div>
+                            </th>
+                            <th class="sonodol-comparison-controlled-column">
+                                <div class="sonodol-comparison-column-header">
+                                    <span class="sonodol-comparison-product-name">Medicamentos
+                                        Controlados</span>
+                                    <span class="sonodol-comparison-product-subtitle">Rivotril,
+                                        Zolpidem, etc.</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Dependência
+                                Química</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>ZERO dependência</strong><br>
+                                Fórmula natural não viciante
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>ALTA dependência</strong><br>
+                                Rivotril, Zolpidem causam vício em semanas
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Efeitos
+                                Colaterais</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>Sem efeitos colaterais</strong><br>
+                                Ingredientes 100% naturais
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>Múltiplos riscos</strong><br>
+                                Tontura, perda de memória, depressão
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Risco
+                                Cardíaco</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>PROTEGE o coração</strong><br>
+                                Magnésio fortalece sistema cardiovascular
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>AUMENTA risco</strong><br>
+                                300% mais chance de problemas cardíacos
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Tolerância
+                                (Doses Crescentes)</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>Mesma dose sempre</strong><br>
+                                Eficácia mantida permanentemente
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>Doses cada vez maiores</strong><br>
+                                Corpo desenvolve resistência
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Qualidade
+                                do Sono</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>Sono natural profundo</strong><br>
+                                8h de descanso reparador
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>Sono artificial
+                                    superficial</strong><br>
+                                Acordar cansado
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Memória
+                                e Concentração</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>MELHORA</strong><br>
+                                L-Teanina aumenta foco e clareza mental
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>PREJUDICA</strong><br>
+                                Esquecimentos e confusão mental
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Tempo
+                                para Fazer Efeito</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>10-15 minutos</strong><br>
+                                Absorção sublingual rápida
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>30-60 minutos</strong><br>
+                                Digestão lenta, efeito demorado
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Síndrome
+                                de Abstinência</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>Pode parar a qualquer
+                                    momento</strong><br>
+                                Sem síndrome de abstinência
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>Perigoso parar</strong><br>
+                                Tremores, convulsões, pânico
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Custo
+                                Mensal</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>R$ <span class="sonodol-comparison-counter"
+                                        data-target="65">0</span>/mês</strong><br>
+                                Economia garantida
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>R$ <span class="sonodol-comparison-counter"
+                                        data-target="265">0</span>/mês</strong><br>
+                                Consultas + exames + remédios
+                            </td>
+                        </tr>
+                        <tr class="sonodol-comparison-table-row">
+                            <td class="sonodol-comparison-criteria">Aprovação
+                                Médica</td>
+                            <td class="sonodol-comparison-sonodol-cell">
+                                <span class="sonodol-comparison-icon-positive">✅</span>
+                                <strong>Recomendado por
+                                    cardiologistas</strong><br>
+                                Seguro para uso contínuo
+                            </td>
+                            <td class="sonodol-comparison-controlled-cell">
+                                <span class="sonodol-comparison-icon-negative">❌</span>
+                                <strong>"Só por pouco tempo"</strong><br>
+                                Médicos alertam sobre riscos
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Before vs After Section -->
+            <div class="sonodol-comparison-before-after">
+                <h3 class="sonodol-comparison-section-title">ANTES vs
+                    DEPOIS</h3>
+                <div class="sonodol-comparison-cards-grid">
+                    <div class="sonodol-comparison-before-card">
+                        <h4>USUÁRIO DE CONTROLADOS (ANTES)</h4>
+                        <ul class="sonodol-comparison-card-list">
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Dependente químico</li>
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Doses crescentes (0,5mg → 2mg → 4mg)</li>
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Memória prejudicada</li>
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Coração sobrecarregado</li>
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Gastando R$ 300+/mês</li>
+                            <li><span class="sonodol-comparison-icon-negative">❌</span>
+                                Medo de parar o remédio</li>
+                        </ul>
+                    </div>
+                    <div class="sonodol-comparison-after-card">
+                        <h4>USUÁRIO DO SONODOL (DEPOIS)</h4>
+                        <ul class="sonodol-comparison-card-list">
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Livre de dependência</li>
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Mesma dose sempre (2 gotas)</li>
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Memória restaurada</li>
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Coração protegido</li>
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Economizando R$ 235/mês</li>
+                            <li><span class="sonodol-comparison-icon-positive">✅</span>
+                                Pode parar quando quiser</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="sonodol-comparison-timeline">
+                <h3 class="sonodol-comparison-section-title">LINHA DO
+                    TEMPO</h3>
+                <div class="sonodol-comparison-timeline-grid">
+                    <div class="sonodol-comparison-timeline-controlled">
+                        <h4>Medicamentos Controlados</h4>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Semana
+                                1-2:</span>
+                            <span class="sonodol-comparison-timeline-status good">✅
+                                Funciona bem</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Mês
+                                1-3:</span>
+                            <span class="sonodol-comparison-timeline-status warning">⚠️
+                                Precisa aumentar dose</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Mês
+                                6:</span>
+                            <span class="sonodol-comparison-timeline-status bad">❌
+                                Dependência estabelecida</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Ano
+                                1+:</span>
+                            <span class="sonodol-comparison-timeline-status bad">❌
+                                Múltiplos efeitos colaterais, doses
+                                altas</span>
+                        </div>
+                    </div>
+                    <div class="sonodol-comparison-timeline-sonodol">
+                        <h4>SONODOL</h4>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Semana
+                                1:</span>
+                            <span class="sonodol-comparison-timeline-status good">✅
+                                Efeito imediato</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Mês
+                                1:</span>
+                            <span class="sonodol-comparison-timeline-status good">✅
+                                Sono restaurado</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Mês
+                                6:</span>
+                            <span class="sonodol-comparison-timeline-status good">✅
+                                Mesma eficácia, mesma dose</span>
+                        </div>
+                        <div class="sonodol-comparison-timeline-item">
+                            <span class="sonodol-comparison-timeline-period">Ano
+                                1+:</span>
+                            <span class="sonodol-comparison-timeline-status good">✅
+                                Saúde plena, zero dependência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="sonodol-comparison-testimonials">
+                <div class="sonodol-comparison-testimonial-card">
+                    <div class="sonodol-comparison-testimonial-content">
+                        "Tomei Rivotril por 3 anos. Comecei com 0,5mg, terminei tomando 4mg por noite. Com SONODOL, 2
+                        gotas bastam e nunca precisei aumentar."
+                    </div>
+                    <div class="sonodol-comparison-testimonial-author">-
+                        Roberto, 52 anos, São Paulo</div>
+                </div>
+                <div class="sonodol-comparison-medical-testimonial">
+                    <div class="sonodol-comparison-testimonial-content">
+                        "Recomendo SONODOL aos meus pacientes porque não causa dependência nem sobrecarrega o coração,
+                        diferente dos benzodiazepínicos."
+                    </div>
+                    <div class="sonodol-comparison-testimonial-author">- Dr.
+                        Carlos Mendes, Cardiologista - CRM 45892</div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="sonodol-comparison-statistics">
+                <h3 class="sonodol-comparison-section-title">📊 SONODOL vs
+                    CONTROLADOS - RESULTADOS REAIS:</h3>
+                <div class="sonodol-comparison-stats-grid">
+                    <div class="sonodol-comparison-stat-item">
+                        <span class="sonodol-comparison-stat-number"><span class="sonodol-comparison-counter"
+                                data-target="97">0</span>%</span>
+                        <span class="sonodol-comparison-stat-label">Eliminaram
+                            dependência química</span>
+                    </div>
+                    <div class="sonodol-comparison-stat-item">
+                        <span class="sonodol-comparison-stat-number"><span class="sonodol-comparison-counter"
+                                data-target="94">0</span>%</span>
+                        <span class="sonodol-comparison-stat-label">Reduziram
+                            custos mensais</span>
+                    </div>
+                    <div class="sonodol-comparison-stat-item">
+                        <span class="sonodol-comparison-stat-number"><span class="sonodol-comparison-counter"
+                                data-target="91">0</span>%</span>
+                        <span class="sonodol-comparison-stat-label">Melhoraram
+                            qualidade do sono</span>
+                    </div>
+                    <div class="sonodol-comparison-stat-item">
+                        <span class="sonodol-comparison-stat-number"><span class="sonodol-comparison-counter"
+                                data-target="89">0</span>%</span>
+                        <span class="sonodol-comparison-stat-label">Restauraram
+                            memória e foco</span>
+                    </div>
+                    <div class="sonodol-comparison-stat-item">
+                        <span class="sonodol-comparison-stat-number"><span class="sonodol-comparison-counter"
+                                data-target="86">0</span>%</span>
+                        <span class="sonodol-comparison-stat-label">Normalizaram
+                            batimentos cardíacos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credibility Badge -->
+            <div class="sonodol-comparison-credibility-badge">
+                "Aprovado por 847 cardiologistas brasileiros como alternativa segura aos controlados"
+            </div>
+
+            <!-- CTA Section -->
+            <div class="sonodol-comparison-cta-section">
+                <button class="sonodol-comparison-cta-button" id="sonodolComparisonCtaButton"
+                    onclick="scrollToPricing()">
+                    QUERO TROCAR POR SONODOL AGORA
+                </button>
+                <p class="sonodol-comparison-cta-text">
+                    Junte-se aos 15.847 brasileiros que já abandonaram os
+                    controlados e recuperaram sua liberdade
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <!-- Plans Section -->
+    <section class="sunodol-plans">
+        <div class="sunodol-plans-grid">
+
+            <!-- Plan 1 - 7 Months -->
+            <div class="sunodol-card sunodol-card-featured">
+                <div class="sunodol-badge">MAIS VENDIDO</div>
+
+                <div class="sunodol-card-header">
+                    <div class="sunodol-plan-title">7 MESES DE TRATAMENTO</div>
+                    <h4 class="sunodol-plan-subtitle">Compre 5 frascos e leve + 03 GRÁTIS + 01 E-BOOK</h4>
+                </div>
+
+                <div class="sunodol-product-image">
+                    <img src="/images/5+2 (2).png" alt="7 Months Treatment" class="sunodol-image">
+                </div>
+
+                <div class="sunodol-pricing">
+                    <p class="sunodol-original-price">De R$541,90</p>
+                    <div class="sunodol-price-highlight">POR APENAS</div>
+                    <div class="sunodol-final-price">
+                        <span class="sunodol-installment-text">por 12x de </span>
+                        <span class="sunodol-price-value">R$35,79</span>
+                    </div>
+                    <p class="sunodol-cash-price">Ou R$347,90 à vista</p>
+                </div>
+
+                <button class="sunodol-buy-btn"
+                    onclick="window.open('https://pay.braip.co/checkout/pla9rxm4/chen8n75?currency=BRL', '_blank')">
+                    🛒 COMPRAR AGORA
+                </button>
+
+                <div class="sunodol-free-shipping">
+                    🚚 Frete grátis!
+                </div>
+            </div>
+
+            <!-- Plan 2 - 4 Months -->
+            <div class="sunodol-card">
+                <div class="sunodol-card-header">
+                    <div class="sunodol-plan-title">4 MESES DE TRATAMENTO</div>
+                    <h4 class="sunodol-plan-subtitle">Compre 3 frascos e leve +01 GRÁTIS</h4>
+                </div>
+
+                <div class="sunodol-product-image">
+                    <img src="/images/3-+-1 (1).png" alt="4 Months Treatment" class="sunodol-image">
+                </div>
+
+                <div class="sunodol-pricing">
+                    <p class="sunodol-original-price">De R$344,90</p>
+                    <div class="sunodol-price-highlight">POR APENAS</div>
+                    <div class="sunodol-final-price">
+                        <span class="sunodol-installment-text">por 12x de </span>
+                        <span class="sunodol-price-value">R$25,50</span>
+                    </div>
+                    <p class="sunodol-cash-price">Ou R$247,90 à vista</p>
+                </div>
+
+                <button class="sunodol-buy-btn"
+                    onclick="window.open('https://pay.braip.co/checkout/plam94yg/chen8n75?currency=BRL', '_blank')">
+                    🛒 COMPRAR AGORA
+                </button>
+
+                <div class="sunodol-free-shipping">
+                    🚚 Frete grátis!
+                </div>
+            </div>
+
+            <!-- Plan 3 - 1 Month -->
+            <div class="sunodol-card">
+                <div class="sunodol-card-header">
+                    <div class="sunodol-plan-title">1 MÊS DE TRATAMENTO</div>
+                    <h4 class="sunodol-plan-subtitle">Compre 1 frasco</h4>
+                </div>
+
+                <div class="sunodol-product-image">
+                    <img src="/images/03-PRODUTO.png" alt="1 Month Treatment" class="sunodol-image">
+                </div>
+
+                <div class="sunodol-pricing">
+                    <p class="sunodol-original-price">De R$157,00</p>
+                    <div class="sunodol-price-highlight">POR APENAS</div>
+                    <div class="sunodol-final-price">
+                        <span class="sunodol-installment-text">por 12x de </span>
+                        <span class="sunodol-price-value">R$9,98</span>
+                    </div>
+                    <p class="sunodol-cash-price">Ou R$97,00 à vista</p>
+                </div>
+
+                <button class="sunodol-buy-btn"
+                    onclick="window.open('https://pay.braip.co/checkout/plapnr2n/chen8n75?currency=BRL', '_blank')">
+                    🛒 COMPRAR AGORA
+                </button>
+
+                <div class="sunodol-free-shipping">
+                    🚚 Frete grátis!
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="stock-alert">
+        <p class="stock-warning">⚠️ ATENÇÃO: ÚLTIMAS <span id="stock-count">47</span> UNIDADES EM ESTOQUE</p>
+        <div class="stock-bar">
+            <div class="stock-progress" style="width: 23%"></div>
+        </div>
+        <p class="restock-info">Próxima remessa em <span id="restock-countdown">45 dias</span></p>
+    </div>
+    </div>
+    </section>
+
+    <!-- Security Guarantee -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-header">
+                <h2 class="guarantee-title">GARANTIA <span class="highlight-success">BLINDADA</span> DE 90
+                    DIAS</h2>
+                <p class="guarantee-subtitle">Estamos tão confiantes nos
+                    resultados que oferecemos a garantia mais forte do
+                    mercado</p>
+            </div>
+
+            <div class="guarantee-box">
+                <div class="guarantee-badge">
+                    <img src="/images/garantia-90-dias.webp" alt="90 Dias de Garantia" class="badge-image"
+                        style=" width: 96px; height: 96px;object-fit: contain;">
+                    <div class="badge-text">
+                        <div class="badge-title">DIAS DE GARANTIA</div>
+                        <div class="badge-subtitle">Risco Zero para Você</div>
+                    </div>
+                </div>
+
+                <h3 class="guarantee-promise">Nossa Promessa Garantida:</h3>
+
+                <div class="guarantees-grid">
+                    <div class="guarantee-item">✓ Durma profundamente em 15 dias ou seu dinheiro de volta</div>
+                    <div class="guarantee-item">✓ Reduza palpitações cardíacas em 30 dias</div>
+                    <div class="guarantee-item">✓ Elimine despertares noturnos em 45 dias</div>
+                    <div class="guarantee-item">✓ Acorde disposto e energizado todos os dias</div>
+                    <div class="guarantee-item">✓ Melhore seus exames cardíacos em 90 dias</div>
+                </div>
+
+                <div class="refund-promise">
+                    <h4 class="refund-title">SE NÃO FUNCIONAR, VOCÊ RECEBE:</h4>
+                    <div class="refund-details">
+                        <div class="refund-item">✅ <strong>100% do seu dinheiro de volta</strong></div>
+                        <div class="refund-item">✅ <strong>+ R$ 100 de bônus</strong> pelos transtornos</div>
+                        <div class="refund-item">✅ <strong>Sem perguntas</strong> ou burocracias</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <h3 class="badges-title">Certificações e Aprovações</h3>
+                <div class="badges-grid">
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/anvisa-logo.png" style="width: 5rem;" />
+                        </div>
+                        <h4 class="badge-name">Aprovado ANVISA</h4>
+                        <p class="badge-description">Registro aprovado pela
+                            Agência Nacional de Vigilância Sanitária</p>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/lab-gmp.jpg" style="width: 5rem;" />
+                        </div>
+                        <h4 class="badge-name">Laboratório GMP</h4>
+                        <p class="badge-description">Fabricado em
+                            laboratório certificado Good Manufacturing
+                            Practices</p>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/universidade.png" style="width: 5rem;" />
+                        </div>
+                        <h4 class="badge-name">Testado em Universidades</h4>
+                        <p class="badge-description">Validado por Harvard,
+                            USP e Johns Hopkins</p>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/doctor-logo.webp" style="width: 5rem;" />
+                        </div>
+                        <h4 class="badge-name">Recomendado por
+                            Cardiologistas</h4>
+                        <p class="badge-description">Aprovado por
+                            especialistas em cardiologia do Brasil</p>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/ssl-logo2.avif" style="width: 5rem;" />
+                        </div>
+                        <h4 class="badge-name">Site 100% Seguro</h4>
+                        <p class="badge-description">Certificado SSL e
+                            criptografia bancária</p>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <img src="images/nfn-logo.png" style="width: 6.69rem;" />
+                        </div>
+                        <h4 class="badge-name">Nota Fiscal Inclusa</h4>
+                        <p class="badge-description">Produto com garantia e
+                            rastreabilidade total</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Features -->
+            <div class="security-features">
+                <h3 class="security-title">Sua Compra é 100% Segura</h3>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <div class="security-icon">🔒</div>
+                        <h4 class="security-name">Pagamento Seguro</h4>
+                        <p class="security-description">Criptografia SSL
+                            256-bits</p>
+                    </div>
+                    <div class="security-item">
+                        <div class="security-icon">🚚</div>
+                        <h4 class="security-name">Entrega Garantida</h4>
+                        <p class="security-description">Receba em 3-7 dias
+                            úteis</p>
+                    </div>
+                    <div class="security-item">
+                        <div class="security-icon">📞</div>
+                        <h4 class="security-name">Suporte 24h</h4>
+                        <p class="security-description">WhatsApp
+                            especializado</p>
+                    </div>
+                    <div class="security-item">
+                        <div class="security-icon">📋</div>
+                        <h4 class="security-name">Nota Fiscal</h4>
+                        <p class="security-description">Produto 100%
+                            regularizado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Countdown -->
+    <footer class="final-section">
+        <div class="container">
+            <!-- Final Countdown -->
+            <div class="final-countdown">
+                <h2 class="countdown-title">⏰ OFERTA EXPIRA EM:</h2>
+
+                <div class="countdown-display">
+                    <div class="time-box">
+                        <div class="time-number" id="final-hours">03</div>
+                        <div class="time-label">HORAS</div>
+                    </div>
+                    <div class="time-box">
+                        <div class="time-number" id="final-minutes">47</div>
+                        <div class="time-label">MIN</div>
+                    </div>
+                    <div class="time-box">
+                        <div class="time-number" id="final-seconds">28</div>
+                        <div class="time-label">SEG</div>
+                    </div>
+                </div>
+
+                <div class="consequences-box">
+                    <h3 class="consequences-title">⚠️ O QUE ACONTECE QUANDO
+                        O TEMPO ESGOTAR:</h3>
+                    <ul class="consequences-list">
+                        <li>⚠️ Preço volta para R$ 891 (preço normal)</li>
+                        <li>⚠️ Estoque pode esgotar por semanas</li>
+                        <li>⚠️ Bônus de R$ 397 serão removidos</li>
+                        <li>⚠️ Garantia reduz para apenas 30 dias</li>
+                        <li>⚠️ Suporte prioritário não incluído</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Giant CTA -->
+            <div class="final-cta">
+                <button class="giant-cta-button" onclick="scrollToPricing()">
+                    <div class="cta-main-text">SIM! EU QUERO SALVAR MINHA VIDA HOJE</div>
+                </button>
+                <div class="cta-sub-text">CLIQUE AQUI ANTES QUE SEJA
+                    TARDE</div>
+                <p class="final-warning">👆 Última chance de garantir o
+                    preço promocional</p>
+            </div>
+
+            <!-- Footer Info -->
+            <div class="footer-info">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Compra Segura</h4>
+                        <ul class="footer-list">
+                            <li>✓ SSL 256-bits</li>
+                            <li>✓ Dados protegidos</li>
+                            <li>✓ Pagamento garantido</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Entrega</h4>
+                        <ul class="footer-list">
+                            <li>✓ 3-7 dias úteis</li>
+                            <li>✓ Frete grátis</li>
+                            <li>✓ Rastreamento incluso</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Suporte 24h</h4>
+                        <ul class="footer-list">
+                            <li>📱 WhatsApp: (11) 98341-5469</li>
+                            <li>📧 sonodolfarmagulf@gmail.com</li>
+                            <li>🕒 24h/dia, 7 dias/semana</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Equipe Especializada</h4>
+                        <p class="footer-text">
+                            Farmacêuticos e médicos especializados em sono e
+                            cardiologia
+                            prontos para ajudar você.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        © 2024 Sonodol. Todos os direitos
+                        reservados.
+                        CNPJ: 00.000.000/0001-00
+                    </p>
+                    <p class="disclaimer">
+                        Este produto não substitui acompanhamento médico.
+                        Consulte sempre seu médico. Resultados podem variar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="whatsapp-float" id="whatsapp-float">
+        <div class="whatsapp-message hidden" id="whatsapp-message">
+            <div class="message-content">
+                <div class="message-title">💬 Suporte Especializado</div>
+                <div class="message-text">
+                    Tire suas dúvidas sobre o Sonodol com nossa equipe
+                    de farmacêuticos e médicos.
+                    Estamos online 24h!
+                </div>
+                <button class="message-button" onclick="openWhatsApp()">
+                    Iniciar Conversa
+                </button>
+            </div>
+        </div>
+        <button class="whatsapp-button" onclick="toggleWhatsAppMessage()">
+            <svg class="whatsapp-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.688" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Exit Intent Modal -->
+    <div class="exit-modal hidden" id="exit-modal">
+        <div class="modal-backdrop" onclick="closeExitModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeExitModal()">×</button>
+
+            <div class="modal-header">
+                <h2 class="modal-title">⚠️ ESPERE! NÃO SAIA AINDA!</h2>
+                <p class="modal-subtitle">
+                    Você está prestes a perder a <strong>ÚNICA OPORTUNIDADE</strong> de melhorar seu sono por apenas
+                    <span class="price-highlight">R$ 67,90</span>
+                </p>
+            </div>
+
+            <div class="special-offer">
+                <h3 class="offer-title">OFERTA EXCLUSIVA DE ÚLTIMA CHANCE:</h3>
+
+                <div class="modal-product">
+                    <div class="modal-product-image">
+                        <img src="/images/03-PRODUTO.png" alt="1 Frasco SUNODOL" class="modal-image"
+                            style="width: 18rem;">
+                    </div>
+
+                    <div class="offer-price">
+                        <div class="price-old">De R$ 97,00</div>
+                        <div class="price-special">Por apenas R$ 67,90</div>
+                        <div class="discount-note">💥 Desconto adicional de R$ 29,10 aplicado automaticamente</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-warning">
+                <p>🕒 Esta oferta desaparece em 10 minutos e NÃO voltará mais!</p>
+            </div>
+
+            <div class="modal-actions">
+                <button class="accept-offer-btn" onclick="window.open('https://pay.braip.co/checkout/plakgqxg/chen8n75?currency=BRL', '_blank')">
+                    SIM! QUERO O DESCONTO DE R$ 29,10
+                </button>
+                <button class="decline-offer-btn" onclick="closeExitModal()">
+                    Não, quero pagar o preço normal de R$ 97,00
+                </button>
+            </div>
+
+            <p class="offer-disclaimer">
+                * Oferta válida apenas para esta sessão. Não pode ser combinada com outras ofertas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Story Modal -->
+    <div class="story-modal hidden" id="story-modal">
+        <div class="modal-backdrop" onclick="closeStoryModal()"></div>
+        <div class="modal-content story-modal-content">
+            <button class="modal-close" onclick="closeStoryModal()">×</button>
+            <div id="story-modal-content">
+                <!-- Story content will be inserted here by JavaScript -->
+            </div>
+            <div class="story-modal-cta">
+                <button class="story-cta-button" onclick="closeStoryModal(); scrollToPricing();">
+                    NÃO QUERO PASSAR POR ISSO
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/tutorial.js"></script>
+    <script src="js/comparison.js"></script>
+</body>
+
+</html>

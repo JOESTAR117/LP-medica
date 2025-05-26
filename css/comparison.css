@@ -1,0 +1,1423 @@
+/* Variáveis CSS para cores */
+:root {
+    /* SONODOL (Positivo) */
+    --sonodol-comparison-green: #22c55e;
+    --sonodol-comparison-green-light: #dcfce7;
+    --sonodol-comparison-green-text: #166534;
+    --sonodol-comparison-green-dark: #15803d;
+
+    /* Controlados (Negativo) */
+    --sonodol-comparison-red: #ef4444;
+    --sonodol-comparison-red-light: #fee2e2;
+    --sonodol-comparison-red-text: #991b1b;
+    --sonodol-comparison-red-dark: #dc2626;
+
+    /* Cores destaque */
+    --sonodol-comparison-blue: #2563eb;
+    --sonodol-comparison-blue-light: #dbeafe;
+
+    /* Neutro */
+    --sonodol-comparison-gray-50: #f8fafc;
+    --sonodol-comparison-gray-100: #f1f5f9;
+    --sonodol-comparison-gray-200: #e2e8f0;
+    --sonodol-comparison-gray-600: #475569;
+    --sonodol-comparison-gray-800: #1e293b;
+    --sonodol-comparison-white: #ffffff;
+
+    /* Warning */
+    --sonodol-comparison-warning: #f59e0b;
+    --sonodol-comparison-warning-light: #fef3c7;
+}
+
+/* Seção Principal */
+.sonodol-comparison-main-section {
+    background: linear-gradient(135deg, var(--sonodol-comparison-white) 0%, var(--sonodol-comparison-gray-50) 100%);
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.sonodol-comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.sonodol-comparison-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sonodol-comparison-main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--sonodol-comparison-gray-800);
+    margin-bottom: 24px;
+}
+
+.sonodol-comparison-highlight-green {
+    color: var(--sonodol-comparison-green);
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+.sonodol-comparison-highlight-blue {
+    color: var(--sonodol-comparison-blue);
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+.sonodol-comparison-subtitle {
+    font-size: 1.25rem;
+    color: var(--sonodol-comparison-gray-600);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Warning Box */
+.sonodol-comparison-warning-box {
+    background: var(--sonodol-comparison-warning-light);
+    border: 2px solid var(--sonodol-comparison-warning);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+    animation: sonodol-comparison-pulse-warning 3s ease-in-out infinite;
+}
+
+@keyframes sonodol-comparison-pulse-warning {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.sonodol-comparison-warning-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.sonodol-comparison-warning-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--sonodol-comparison-gray-800);
+    margin-bottom: 20px;
+}
+
+.sonodol-comparison-warning-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.sonodol-comparison-warning-list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--sonodol-comparison-gray-800);
+}
+
+.sonodol-comparison-warning-list li::before {
+    content: '•';
+    color: var(--sonodol-comparison-red);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.sonodol-comparison-warning-solution {
+    background: var(--sonodol-comparison-green-light);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--sonodol-comparison-green);
+    color: var(--sonodol-comparison-green-text);
+    font-weight: 600;
+}
+
+/* Tabela de Comparação */
+.sonodol-comparison-table-container {
+    overflow-x: auto;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    -webkit-overflow-scrolling: touch;
+}
+
+.sonodol-comparison-table {
+    width: 100%;
+    min-width: 768px;
+    border-collapse: collapse;
+    background: var(--sonodol-comparison-white);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sonodol-comparison-table-header th {
+    padding: 25px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.sonodol-comparison-criteria-column {
+    background: var(--sonodol-comparison-gray-100);
+    color: var(--sonodol-comparison-gray-800);
+    width: 25%;
+}
+
+.sonodol-comparison-sonodol-column {
+    background: var(--sonodol-comparison-green-light);
+    color: var(--sonodol-comparison-green-text);
+    border-left: 4px solid var(--sonodol-comparison-green);
+    width: 37.5%;
+}
+
+.sonodol-comparison-controlled-column {
+    background: var(--sonodol-comparison-red-light);
+    color: var(--sonodol-comparison-red-text);
+    border-left: 4px solid var(--sonodol-comparison-red);
+    width: 37.5%;
+}
+
+.sonodol-comparison-column-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sonodol-comparison-product-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.sonodol-comparison-product-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.sonodol-comparison-table-row {
+    border-bottom: 1px solid var(--sonodol-comparison-gray-200);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: sonodol-comparison-slide-in 0.6s ease forwards;
+}
+
+.sonodol-comparison-table-row:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.sonodol-comparison-table-row:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.sonodol-comparison-table-row:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.sonodol-comparison-table-row:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.sonodol-comparison-table-row:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.sonodol-comparison-table-row:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.sonodol-comparison-table-row:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.sonodol-comparison-table-row:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.sonodol-comparison-table-row:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.sonodol-comparison-table-row:nth-child(10) {
+    animation-delay: 1.0s;
+}
+
+@keyframes sonodol-comparison-slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sonodol-comparison-table-row:hover {
+    background: rgba(0, 0, 0, 0.02);
+    transform: scale(1.01);
+}
+
+.sonodol-comparison-table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.sonodol-comparison-criteria {
+    background: var(--sonodol-comparison-gray-50);
+    font-weight: 600;
+    color: var(--sonodol-comparison-gray-800);
+}
+
+.sonodol-comparison-sonodol-cell {
+    background: var(--sonodol-comparison-green-light);
+    color: var(--sonodol-comparison-green-text);
+}
+
+.sonodol-comparison-controlled-cell {
+    background: var(--sonodol-comparison-red-light);
+    color: var(--sonodol-comparison-red-text);
+}
+
+.sonodol-comparison-icon-positive {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    animation: sonodol-comparison-pulse-positive 2s ease-in-out infinite;
+}
+
+.sonodol-comparison-icon-negative {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    animation: sonodol-comparison-pulse-negative 2s ease-in-out infinite;
+}
+
+@keyframes sonodol-comparison-pulse-positive {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sonodol-comparison-pulse-negative {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Before vs After */
+.sonodol-comparison-before-after {
+    margin-bottom: 60px;
+}
+
+.sonodol-comparison-section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--sonodol-comparison-gray-800);
+    margin-bottom: 40px;
+}
+
+.sonodol-comparison-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.sonodol-comparison-before-card,
+.sonodol-comparison-after-card {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sonodol-comparison-before-card {
+    background: var(--sonodol-comparison-red-light);
+    border: 2px solid var(--sonodol-comparison-red);
+}
+
+.sonodol-comparison-after-card {
+    background: var(--sonodol-comparison-green-light);
+    border: 2px solid var(--sonodol-comparison-green);
+}
+
+.sonodol-comparison-before-card h4 {
+    color: var(--sonodol-comparison-red-text);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sonodol-comparison-after-card h4 {
+    color: var(--sonodol-comparison-green-text);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sonodol-comparison-card-list {
+    list-style: none;
+}
+
+.sonodol-comparison-card-list li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Timeline */
+.sonodol-comparison-timeline {
+    margin-bottom: 60px;
+}
+
+.sonodol-comparison-timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.sonodol-comparison-timeline-controlled,
+.sonodol-comparison-timeline-sonodol {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sonodol-comparison-timeline-controlled {
+    background: var(--sonodol-comparison-red-light);
+    border: 2px solid var(--sonodol-comparison-red);
+}
+
+.sonodol-comparison-timeline-sonodol {
+    background: var(--sonodol-comparison-green-light);
+    border: 2px solid var(--sonodol-comparison-green);
+}
+
+.sonodol-comparison-timeline-controlled h4 {
+    color: var(--sonodol-comparison-red-text);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.sonodol-comparison-timeline-sonodol h4 {
+    color: var(--sonodol-comparison-green-text);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.sonodol-comparison-timeline-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sonodol-comparison-timeline-item:last-child {
+    border-bottom: none;
+}
+
+.sonodol-comparison-timeline-period {
+    font-weight: 600;
+    color: var(--sonodol-comparison-gray-800);
+}
+
+.sonodol-comparison-timeline-status.good {
+    color: var(--sonodol-comparison-green-text);
+}
+
+.sonodol-comparison-timeline-status.warning {
+    color: var(--sonodol-comparison-warning);
+}
+
+.sonodol-comparison-timeline-status.bad {
+    color: var(--sonodol-comparison-red-text);
+}
+
+/* Testimonials */
+.sonodol-comparison-testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.sonodol-comparison-testimonial-card,
+.sonodol-comparison-medical-testimonial {
+    background: var(--sonodol-comparison-white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.sonodol-comparison-testimonial-card::before,
+.sonodol-comparison-medical-testimonial::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--sonodol-comparison-blue);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.3;
+}
+
+.sonodol-comparison-testimonial-content {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--sonodol-comparison-gray-800);
+    margin-bottom: 15px;
+}
+
+.sonodol-comparison-testimonial-author {
+    font-weight: 600;
+    color: var(--sonodol-comparison-blue);
+    text-align: right;
+}
+
+/* Statistics */
+.sonodol-comparison-statistics {
+    margin-bottom: 40px;
+}
+
+.sonodol-comparison-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sonodol-comparison-stat-item {
+    text-align: center;
+    background: var(--sonodol-comparison-white);
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sonodol-comparison-stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.sonodol-comparison-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--sonodol-comparison-green);
+    margin-bottom: 10px;
+}
+
+.sonodol-comparison-stat-label {
+    font-size: 0.9rem;
+    color: var(--sonodol-comparison-gray-600);
+    line-height: 1.4;
+}
+
+/* Credibility Badge */
+.sonodol-comparison-credibility-badge {
+    background: var(--sonodol-comparison-blue-light);
+    border: 2px solid var(--sonodol-comparison-blue);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--sonodol-comparison-blue);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.sonodol-comparison-cta-section {
+    text-align: center;
+}
+
+.sonodol-comparison-cta-button {
+    background: linear-gradient(135deg, var(--sonodol-comparison-green), var(--sonodol-comparison-green-dark));
+    color: var(--sonodol-comparison-white);
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+    animation: sonodol-comparison-pulse-cta 2s ease-in-out infinite;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes sonodol-comparison-pulse-cta {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.sonodol-comparison-cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
+}
+
+.sonodol-comparison-cta-text {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--sonodol-comparison-gray-600);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design - Melhorado */
+
+/* Tablets - 1024px */
+@media (max-width: 1024px) {
+    .sonodol-comparison-main-title {
+        font-size: 2.2rem;
+    }
+
+    .sonodol-comparison-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .sonodol-comparison-cards-grid,
+    .sonodol-comparison-timeline-grid,
+    .sonodol-comparison-testimonials {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sonodol-comparison-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .sonodol-comparison-table {
+        min-width: 700px;
+    }
+}
+
+/* Tablets pequenos - 768px */
+@media (max-width: 768px) {
+    .sonodol-comparison-main-section {
+        padding: 50px 15px;
+    }
+
+    .sonodol-comparison-main-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .sonodol-comparison-subtitle {
+        font-size: 1rem;
+    }
+
+    .sonodol-comparison-header {
+        margin-bottom: 40px;
+    }
+
+    .sonodol-comparison-warning-box {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .sonodol-comparison-warning-icon {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sonodol-comparison-warning-content h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .sonodol-comparison-table {
+        min-width: 600px;
+    }
+
+    .sonodol-comparison-table-header th {
+        padding: 20px 15px;
+        font-size: 1rem;
+    }
+
+    .sonodol-comparison-table td {
+        padding: 15px 12px;
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .sonodol-comparison-before-card,
+    .sonodol-comparison-after-card,
+    .sonodol-comparison-timeline-controlled,
+    .sonodol-comparison-timeline-sonodol {
+        padding: 25px;
+    }
+
+    .sonodol-comparison-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sonodol-comparison-stat-item {
+        padding: 20px 15px;
+    }
+
+    .sonodol-comparison-stat-number {
+        font-size: 2.2rem;
+    }
+
+    .sonodol-comparison-testimonial-card,
+    .sonodol-comparison-medical-testimonial {
+        padding: 25px;
+    }
+
+    .sonodol-comparison-testimonial-content {
+        font-size: 1rem;
+    }
+
+    .sonodol-comparison-cta-button {
+        padding: 18px 35px;
+        font-size: 1.2rem;
+    }
+
+    .sonodol-comparison-cta-text {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares grandes - 640px */
+@media (max-width: 640px) {
+    .sonodol-comparison-main-section {
+        padding: 40px 12px;
+    }
+
+    .sonodol-comparison-main-title {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .sonodol-comparison-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .sonodol-comparison-warning-box {
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    .sonodol-comparison-warning-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .sonodol-comparison-warning-list li {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+
+    .sonodol-comparison-table-container {
+        border-radius: 15px;
+        margin-bottom: 40px;
+    }
+
+    .sonodol-comparison-table {
+        min-width: 550px;
+        border-radius: 15px;
+    }
+
+    .sonodol-comparison-table-header th {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-product-name {
+        font-size: 1rem;
+    }
+
+    .sonodol-comparison-product-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sonodol-comparison-table td {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+
+    .sonodol-comparison-icon-positive,
+    .sonodol-comparison-icon-negative {
+        font-size: 1rem;
+        margin-right: 6px;
+    }
+
+    .sonodol-comparison-section-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .sonodol-comparison-before-card,
+    .sonodol-comparison-after-card,
+    .sonodol-comparison-timeline-controlled,
+    .sonodol-comparison-timeline-sonodol {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .sonodol-comparison-before-card h4,
+    .sonodol-comparison-after-card h4,
+    .sonodol-comparison-timeline-controlled h4,
+    .sonodol-comparison-timeline-sonodol h4 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .sonodol-comparison-card-list li {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-timeline-item {
+        padding: 12px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .sonodol-comparison-timeline-period {
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-timeline-status {
+        font-size: 0.85rem;
+    }
+
+    .sonodol-comparison-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sonodol-comparison-stat-item {
+        padding: 18px 12px;
+    }
+
+    .sonodol-comparison-stat-number {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .sonodol-comparison-stat-label {
+        font-size: 0.85rem;
+    }
+
+    .sonodol-comparison-testimonial-card,
+    .sonodol-comparison-medical-testimonial {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .sonodol-comparison-testimonial-card::before,
+    .sonodol-comparison-medical-testimonial::before {
+        font-size: 3rem;
+        top: 8px;
+        left: 15px;
+    }
+
+    .sonodol-comparison-testimonial-content {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .sonodol-comparison-testimonial-author {
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-credibility-badge {
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .sonodol-comparison-cta-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 16px 30px;
+        font-size: 1.1rem;
+        border-radius: 40px;
+    }
+
+    .sonodol-comparison-cta-text {
+        font-size: 0.95rem;
+        margin-top: 15px;
+    }
+}
+
+/* Celulares pequenos - 480px */
+@media (max-width: 480px) {
+    .sonodol-comparison-main-section {
+        padding: 30px 10px;
+    }
+
+    .sonodol-comparison-main-title {
+        font-size: 1.6rem;
+    }
+
+    .sonodol-comparison-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .sonodol-comparison-warning-box {
+        padding: 18px;
+    }
+
+    .sonodol-comparison-warning-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .sonodol-comparison-table {
+        min-width: 480px;
+    }
+
+    .sonodol-comparison-table-header th {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+
+    .sonodol-comparison-table td {
+        padding: 10px 6px;
+        font-size: 0.8rem;
+    }
+
+    .sonodol-comparison-section-title {
+        font-size: 1.4rem;
+    }
+
+    .sonodol-comparison-before-card,
+    .sonodol-comparison-after-card,
+    .sonodol-comparison-timeline-controlled,
+    .sonodol-comparison-timeline-sonodol {
+        padding: 18px;
+    }
+
+    .sonodol-comparison-stat-number {
+        font-size: 1.8rem;
+    }
+
+    .sonodol-comparison-testimonial-card,
+    .sonodol-comparison-medical-testimonial {
+        padding: 18px;
+    }
+
+    .sonodol-comparison-testimonial-card::before,
+    .sonodol-comparison-medical-testimonial::before {
+        font-size: 2.5rem;
+    }
+
+    .sonodol-comparison-cta-button {
+        padding: 14px 25px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Melhorias para acessibilidade em telas pequenas */
+@media (max-width: 640px) {
+
+    /* Melhor espaçamento para toque */
+    .sonodol-comparison-cta-button {
+        min-height: 44px;
+    }
+
+    /* Scroll horizontal mais suave */
+    .sonodol-comparison-table-container {
+        scrollbar-width: thin;
+    }
+
+    .sonodol-comparison-table-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .sonodol-comparison-table-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+    }
+
+    .sonodol-comparison-table-container::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+    }
+
+    .sonodol-comparison-table-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Remover hover effects em dispositivos touch */
+    .sonodol-comparison-table-row:hover {
+        background: initial;
+        transform: initial;
+    }
+
+    .sonodol-comparison-stat-item:hover {
+        transform: initial;
+    }
+
+    .sonodol-comparison-cta-button:hover {
+        transform: initial;
+        box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+    }
+}
+
+/* Versão alternativa para telas muito pequenas - Layout em Cards */
+@media (max-width: 420px) {
+
+    /* Ocultar tabela e mostrar layout em cards */
+    .sonodol-comparison-table-container {
+        display: none;
+    }
+
+    .sonodol-comparison-mobile-cards {
+        display: block;
+    }
+}
+
+/* Layout em cards para mobile (deve ser implementado no HTML) */
+.sonodol-comparison-mobile-cards {
+    display: none;
+}
+
+.sonodol-comparison-mobile-card {
+    background: var(--sonodol-comparison-white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.sonodol-comparison-mobile-card-header {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.sonodol-comparison-mobile-card-header.sonodol {
+    background: var(--sonodol-comparison-green-light);
+    color: var(--sonodol-comparison-green-text);
+}
+
+.sonodol-comparison-mobile-card-header.controlled {
+    background: var(--sonodol-comparison-red-light);
+    color: var(--sonodol-comparison-red-text);
+}
+
+.sonodol-comparison-mobile-card-content {
+    padding: 0;
+}
+
+.sonodol-comparison-mobile-card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--sonodol-comparison-gray-200);
+}
+
+.sonodol-comparison-mobile-card-item:last-child {
+    border-bottom: none;
+}
+
+.sonodol-comparison-mobile-card-criteria {
+    font-weight: 600;
+    color: var(--sonodol-comparison-gray-800);
+    flex: 1;
+    margin-right: 15px;
+    font-size: 0.9rem;
+}
+
+.sonodol-comparison-mobile-card-value {
+    text-align: right;
+    flex: 1;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+.sonodol-comparison-mobile-card-value.positive {
+    color: var(--sonodol-comparison-green-text);
+}
+
+.sonodol-comparison-mobile-card-value.negative {
+    color: var(--sonodol-comparison-red-text);
+}
+
+/* Otimizações gerais para performance em mobile */
+@media (max-width: 768px) {
+
+    /* Reduzir animações em dispositivos móveis */
+    .sonodol-comparison-table-row {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .sonodol-comparison-pulse-warning,
+    .sonodol-comparison-pulse-positive,
+    .sonodol-comparison-pulse-negative,
+    .sonodol-comparison-pulse-cta {
+        animation: none;
+    }
+
+    /* Otimizar shadows para performance */
+    .sonodol-comparison-table-container,
+    .sonodol-comparison-before-card,
+    .sonodol-comparison-after-card,
+    .sonodol-comparison-timeline-controlled,
+    .sonodol-comparison-timeline-sonodol,
+    .sonodol-comparison-testimonial-card,
+    .sonodol-comparison-medical-testimonial,
+    .sonodol-comparison-stat-item {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .sonodol-comparison-cta-button {
+        box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25);
+    }
+}
+
+/* Modo paisagem para celulares */
+@media (max-width: 768px) and (orientation: landscape) {
+    .sonodol-comparison-main-section {
+        padding: 30px 15px;
+    }
+
+    .sonodol-comparison-main-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .sonodol-comparison-header {
+        margin-bottom: 30px;
+    }
+
+    .sonodol-comparison-warning-box {
+        margin-bottom: 30px;
+    }
+
+    .sonodol-comparison-section-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .sonodol-comparison-cards-grid,
+    .sonodol-comparison-timeline-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .sonodol-comparison-testimonials {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Ajustes para dispositivos com densidade de pixels alta */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .sonodol-comparison-highlight-green,
+    .sonodol-comparison-highlight-blue {
+        text-shadow: 0 0 5px rgba(34, 197, 94, 0.2);
+    }
+}
+
+/* Melhorias de contraste para acessibilidade */
+@media (prefers-contrast: high) {
+    .sonodol-comparison-highlight-green {
+        text-shadow: none;
+        font-weight: 900;
+    }
+
+    .sonodol-comparison-highlight-blue {
+        text-shadow: none;
+        font-weight: 900;
+    }
+
+    .sonodol-comparison-icon-positive,
+    .sonodol-comparison-icon-negative {
+        font-weight: 900;
+    }
+}
+
+/* Redução de movimento para usuários sensíveis */
+@media (prefers-reduced-motion: reduce) {
+
+    .sonodol-comparison-pulse-warning,
+    .sonodol-comparison-slide-in,
+    .sonodol-comparison-pulse-positive,
+    .sonodol-comparison-pulse-negative,
+    .sonodol-comparison-pulse-cta {
+        animation: none;
+    }
+
+    .sonodol-comparison-table-row,
+    .sonodol-comparison-stat-item,
+    .sonodol-comparison-cta-button {
+        transition: none;
+    }
+
+    .sonodol-comparison-table-row:hover,
+    .sonodol-comparison-stat-item:hover,
+    .sonodol-comparison-cta-button:hover {
+        transform: none;
+    }
+
+
+    /* MOBILE - 640px e menor */
+    @media (max-width: 640px) {
+        .sonodol-comparison-main-section {
+            padding: 40px 15px;
+        }
+
+        .sonodol-comparison-main-title {
+            font-size: 1.8rem;
+            line-height: 1.1;
+        }
+
+        .sonodol-comparison-subtitle {
+            font-size: 0.95rem;
+        }
+
+        .sonodol-comparison-warning-box {
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .sonodol-comparison-warning-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .sonodol-comparison-warning-list li {
+            font-size: 0.9rem;
+            padding: 6px 0;
+        }
+
+        /* OCULTAR TABELA E MOSTRAR CARDS NO MOBILE */
+        .sonodol-comparison-table-container {
+            display: none;
+        }
+
+        .sonodol-comparison-mobile-cards {
+            display: block;
+        }
+
+        .sonodol-comparison-section-title {
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+
+        .sonodol-comparison-before-card,
+        .sonodol-comparison-after-card,
+        .sonodol-comparison-timeline-controlled,
+        .sonodol-comparison-timeline-sonodol {
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .sonodol-comparison-before-card h4,
+        .sonodol-comparison-after-card h4,
+        .sonodol-comparison-timeline-controlled h4,
+        .sonodol-comparison-timeline-sonodol h4 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .sonodol-comparison-card-list li {
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .sonodol-comparison-timeline-item {
+            padding: 12px 0;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        .sonodol-comparison-timeline-period {
+            font-size: 0.9rem;
+        }
+
+        .sonodol-comparison-timeline-status {
+            font-size: 0.85rem;
+        }
+
+        .sonodol-comparison-stats-grid {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .sonodol-comparison-stat-item {
+            padding: 18px 12px;
+        }
+
+        .sonodol-comparison-stat-number {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .sonodol-comparison-stat-label {
+            font-size: 0.85rem;
+        }
+
+        .sonodol-comparison-testimonial-card,
+        .sonodol-comparison-medical-testimonial {
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .sonodol-comparison-testimonial-card::before,
+        .sonodol-comparison-medical-testimonial::before {
+            font-size: 3rem;
+            top: 8px;
+            left: 15px;
+        }
+
+        .sonodol-comparison-testimonial-content {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .sonodol-comparison-testimonial-author {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* CELULARES PEQUENOS - 480px */
+    @media (max-width: 480px) {
+        .sonodol-comparison-main-section {
+            padding: 30px 12px;
+        }
+
+        .sonodol-comparison-main-title {
+            font-size: 1.6rem;
+        }
+
+        .sonodol-comparison-subtitle {
+            font-size: 0.9rem;
+        }
+
+        .sonodol-comparison-warning-box {
+            padding: 18px;
+        }
+
+        .sonodol-comparison-warning-content h3 {
+            font-size: 1.1rem;
+        }
+
+        .sonodol-comparison-section-title {
+            font-size: 1.4rem;
+        }
+
+        .sonodol-comparison-table-container{
+            display: none !important;
+        }
+
+        .sonodol-comparison-before-card,
+        .sonodol-comparison-after-card,
+        .sonodol-comparison-timeline-controlled,
+        .sonodol-comparison-timeline-sonodol {
+            padding: 18px;
+        }
+
+        .sonodol-comparison-stat-number {
+            font-size: 1.8rem;
+        }
+
+        .sonodol-comparison-testimonial-card,
+        .sonodol-comparison-medical-testimonial {
+            padding: 18px;
+        }
+
+        .sonodol-comparison-testimonial-card::before,
+        .sonodol-comparison-medical-testimonial::before {
+            font-size: 2.5rem;
+        }
+
+        .sonodol-comparison-mobile-card-header {
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .sonodol-comparison-mobile-card-item {
+            padding: 12px 15px;
+        }
+
+        .sonodol-comparison-mobile-card-criteria {
+            font-size: 0.9rem;
+        }
+
+        .sonodol-comparison-mobile-card-value {
+            font-size: 0.85rem;
+        }
+
+
+    }
+
+    /* Otimização scroll horizontal */
+    @media (max-width: 640px) {
+        .sonodol-comparison-table-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .sonodol-comparison-table-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        .sonodol-comparison-table-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+    }
+
+    /* Remover hover effects em dispositivos touch */
+    @media (hover: none) {
+        .sonodol-comparison-stat-item:hover {
+            transform: none;
+        }
+    }
+
+    /* Counter animation */
+    .sonodol-comparison-counter {
+        font-weight: inherit;
+    }
+
+}
