@@ -35,7 +35,7 @@ const TESTIMONIALS_DATA = [
         text: "Sofria de insônia há 8 anos. Em 15 dias usando Sonodol, volto a dormir como criança. Minha pressão normalizou e me sinto 10 anos mais nova!",
         before: "3-4h de sono fragmentado",
         after: "8h de sono profundo",
-        avatar: "/images/women-35.jpg"
+        avatar: "images/women-35.jpg"
     },
     {
         name: "Roberto Silva",
@@ -45,7 +45,7 @@ const TESTIMONIALS_DATA = [
         text: "Meu cardiologista ficou impressionado! Em 2 meses, meus exames cardíacos melhoraram drasticamente. Sonodol literalmente salvou minha vida.",
         before: "Risco alto de infarto",
         after: "Coração saudável",
-        avatar: "/images/man-40.webp"
+        avatar: "images/man-40.webp"
     },
     {
         name: "Fernanda Costa",
@@ -55,7 +55,7 @@ const TESTIMONIALS_DATA = [
         text: "Depois de um AVC aos 39, descobri Sonodol. Hoje durmo tranquila, minha recuperação acelerou e voltei a trabalhar com energia total!",
         before: "Sequelas do AVC",
         after: "Recuperação completa",
-        avatar: "/images/women-38.jpeg"
+        avatar: "images/women-38.jpeg"
     }
 ];
 
