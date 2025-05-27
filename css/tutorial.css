@@ -361,6 +361,7 @@
 @media (max-width: 640px) {
     .sonodol-main-title {
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .sonodol-medical-illustration {

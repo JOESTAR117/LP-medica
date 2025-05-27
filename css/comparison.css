@@ -921,6 +921,11 @@
         font-size: 1.4rem;
     }
 
+    .sonodol-comparison-warning-list li::before{
+        left: -15px;
+        top: -1px;
+    }
+
     .sonodol-comparison-before-card,
     .sonodol-comparison-after-card,
     .sonodol-comparison-timeline-controlled,
