@@ -1579,7 +1579,6 @@ p {
 
 .security-icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 .security-name {
@@ -2221,7 +2220,7 @@ p {
   }
 
   .security-item {
-    padding: 0;
+    padding: 1rem;
   }
 
   /*Impactos*/

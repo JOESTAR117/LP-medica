@@ -105,12 +105,14 @@
 .sunodol-image {
     max-height: 100%;
     max-width: 100%;
+    width: 7rem;
+    transform: scale(2);
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .sunodol-card:hover .sunodol-image {
-    transform: scale(1.05);
+    transform: scale(2.05);
 }
 
 .sunodol-pricing {

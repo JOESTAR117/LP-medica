@@ -470,7 +470,6 @@
 
 .sonodol-comparison-testimonial-card::before,
 .sonodol-comparison-medical-testimonial::before {
-    content: '"';
     font-size: 4rem;
     color: var(--sonodol-comparison-blue);
     position: absolute;
