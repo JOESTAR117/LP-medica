@@ -202,7 +202,7 @@
 
 .sonodol-medical-illustration {
     border: 2px solid rgba(74, 110, 191, 0.1);
-    border-radius: 16px;
+    border-radius: 28px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -215,7 +215,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 28px;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
 }
 
