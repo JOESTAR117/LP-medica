@@ -201,10 +201,8 @@
 }
 
 .sonodol-medical-illustration {
-    background: linear-gradient(135deg, var(--sonodol-gray-light) 0%, var(--sonodol-white) 100%);
     border: 2px solid rgba(74, 110, 191, 0.1);
     border-radius: 16px;
-    padding: 32px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -362,10 +360,6 @@
     .sonodol-main-title {
         font-size: 1.2rem;
         text-align: center;
-    }
-
-    .sonodol-medical-illustration {
-        padding: 24px;
     }
 
     .sonodol-step-card {
